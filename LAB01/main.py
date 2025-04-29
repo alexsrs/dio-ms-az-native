@@ -19,8 +19,9 @@ SQL_PASSWORD = os.getenv("SQL_PASSWORD")
 
 
 # Título da aplicação
-st.title("Cadastro de Produto - E-Commerce na Cloud")
-
+st.title("Cadastro de Produto")
+st.subheader("E-Commerce na Cloud com Streamlit e Azure")
+st.markdown("Esta aplicação permite o cadastro de produtos com imagem, descrição e preço. Os dados são armazenados no Azure SQL Server e as imagens no Azure Blob Storage.")
 # Formulário para cadastro do produto
 product_name = st.text_input("Nome do Produto")
 description = st.text_area("Descrição do Produto")
